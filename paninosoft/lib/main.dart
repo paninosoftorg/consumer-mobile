@@ -71,6 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
         body: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
