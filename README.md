@@ -29,7 +29,7 @@ Per compilare l'app clonare questa repo, e aprire la cartella `consumer-mobile/p
 
 Per iniziare a sviluppare effettuare i comandi:
 
-    flutter pub clean //Per ripulire i file temporanei
+    flutter clean //Per ripulire i file temporanei
     flutter packages get //Per scaricare le librerie necessarie
     flutter packages upgrade //Per aggiornare le librerie
 

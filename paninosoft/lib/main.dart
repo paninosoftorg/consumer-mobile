@@ -48,19 +48,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -82,13 +69,13 @@ class _MyHomePageState extends State<MyHomePage> {
               height: (MediaQuery.of(context).size.height * 0.43),
               decoration: BoxDecoration(
                 color: Colors.purple[600],
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     bottomRight: Radius.circular(40.0),
                     bottomLeft: Radius.circular(40.0)),
               ),
-              child: Center(
+              child: const Center(
                   child: Padding(
-                padding: const EdgeInsets.only(left: 45.0, right: 45.0),
+                padding: EdgeInsets.only(left: 45.0, right: 45.0),
                 child: Image(
                   image: AssetImage("lib/assets/logotype@2x.png"),
                 ),
@@ -105,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: (MediaQuery.of(context).size.height * 0.15),
               decoration: BoxDecoration(
                 color: Colors.purple[600],
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     topRight: Radius.circular(40.0),
                     topLeft: Radius.circular(40.0)),
               ),
