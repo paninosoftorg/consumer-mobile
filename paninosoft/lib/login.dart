@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//E58C20C1
 class Login extends StatefulWidget {
   const Login({super.key, required String title});
 
@@ -158,7 +159,7 @@ class _LoginState extends State<Login> {
                             margin:
                                 const EdgeInsets.only(left: 30.0, right: 30.0),
                             decoration: BoxDecoration(
-                              color: Color(0XFFB28C20C1),
+                              color: const Color(0XFFB28C20C1),
                               borderRadius: const BorderRadius.only(
                                   topRight: Radius.circular(65.0),
                                   topLeft: Radius.circular(65.0),
@@ -182,14 +183,12 @@ class _LoginState extends State<Login> {
                               ),
                             ),
                           ),
-                          Form(
-                            child: ElevatedButton(
-                              onPressed: () {
-                                // Validate returns true if the form is valid, or false otherwise.
-                              },
+                          ElevatedButton(
                               child: const Text('Accedi'),
-                            ),
-                          ),
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Color(0XFFE58C20C1),
+                              )),
                           Column(
                             children: [
                               Container(
@@ -199,7 +198,7 @@ class _LoginState extends State<Login> {
                               Container(
                                 margin: const EdgeInsets.only(bottom: 30.0),
                                 child: const Text(
-                                  "Hai già un account? Accedi",
+                                  "Non hai ancora un account? Registrati",
                                   textAlign: TextAlign.center,
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(fontSize: 13),
